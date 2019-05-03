@@ -23,7 +23,8 @@ def calendar
     months = ["January", "Febuary", "Mars", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
     date = [days[day], months[month], year.to_s]
     output = "#{date[0]} of #{date[1]}, #{date[2]}"
-    output += events(day, month)
+    output += events(day, month, year)
+    output += lunar_phases(day, month, year)
     output += "\n#{days_passed} days have passed since the start of the campaign."
     puts output
 
@@ -42,7 +43,8 @@ def calendar
         days_passed += 1
         date = [days[day], months[month], year.to_s]
         output = "#{date[0]} of #{date[1]}, #{date[2]}"
-        output += events(day, month)
+        output += events(day, month, year)
+        output += lunar_phases(day, month, year)
         output += "\n#{days_passed} days have passed since the start of the campaign."
         puts output
         continue = STDIN.gets.chomp

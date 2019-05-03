@@ -1,400 +1,400 @@
-def events(day, month)
+def events(day, month, year)
     events = [
         #Month 1
         [
-            "\nSmall Moon: New Moon\nMedium Moon: Last Quarter\nLarge Moon: Waning Gibbous", #Day 1
-            "\nSmall Moon: New Moon\nMedium Moon: Last Quarter\nLarge Moon: Waning Gibbous", #Day 2
-            "\nSmall Moon: New Moon\nMedium Moon: Last Quarter\nLarge Moon: Waning Gibbous", #Day 3
-            "\nSmall Moon: Waxing Crecent\nMedium Moon: Last Quarter\nLarge Moon: Last Quarter", #Day 4
-            "\nSmall Moon: Waxing Crecent\nMedium Moon: Last Quarter\nLarge Moon: Last Quarter", #Day 5
-            "\nSmall Moon: Waxing Crecent\nMedium Moon: Last Quarter\nLarge Moon: Last Quarter", #Day 6
-            "\nSmall Moon: Waxing Crecent\nMedium Moon: Waning Crecent\nLarge Moon: Last Quarter", #Day 7
-            "\nSmall Moon: First Quarter\nMedium Moon: Waning Crecent\nLarge Moon: Last Quarter", #Day 8
-            "\nSmall Moon: First Quarter\nMedium Moon: Waning Crecent\nLarge Moon: Last Quarter", #Day 9
-            "\nSmall Moon: First Quarter\nMedium Moon: Waning Crecent\nLarge Moon: Last Quarter", #Day 10
-            "\nSmall Moon: First Quarter\nMedium Moon: Waning Crecent\nLarge Moon: Last Quarter", #Day 11
-            "\nSmall Moon: Waxing Gibbous\nMedium Moon: Waning Crecent\nLarge Moon: Last Quarter", #Day 12
-            "\nSmall Moon: Waxing Gibbous\nMedium Moon: Waning Crecent\nLarge Moon: Last Quarter", #Day 13
-            "\nSmall Moon: Waxing Gibbous\nMedium Moon: Waning Crecent\nLarge Moon: Last Quarter", #Day 14
-            "\nSmall Moon: Waxing Gibbous\nMedium Moon: New Moon\nLarge Moon: Last Quarter", #Day 15
-            "\nSmall Moon: Full Moon\nMedium Moon: New Moon\nLarge Moon: Waning Crecent", #Day 16
-            "\nSmall Moon: Full Moon\nMedium Moon: New Moon\nLarge Moon: Waning Crecent", #Day 17
-            "\nSmall Moon: Full Moon\nMedium Moon: New Moon\nLarge Moon: Waning Crecent", #Day 18
-            "\nSmall Moon: Waning Gibbous\nMedium Moon: New Moon\nLarge Moon: Waning Crecent", #Day 19
-            "\nSmall Moon: Waning Gibbous\nMedium Moon: New Moon\nLarge Moon: Waning Crecent", #Day 20
-            "\nSmall Moon: Waning Gibbous\nMedium Moon: Waxing Crecent\nLarge Moon: Waning Crecent", #Day 21
-            "\nSmall Moon: Waning Gibbous\nMedium Moon: Waxing Crecent\nLarge Moon: Waning Crecent", #Day 22
-            "\nSmall Moon: Last Quarter\nMedium Moon: Waxing Crecent\nLarge Moon: Waning Crecent", #Day 23
-            "\nSmall Moon: Last Quarter\nMedium Moon: Waxing Crecent\nLarge Moon: Waning Crecent", #Day 24
-            "\nSmall Moon: Last Quarter\nMedium Moon: Waxing Crecent\nLarge Moon: Waning Crecent", #Day 25
-            "\nSmall Moon: Last Quarter\nMedium Moon: Waxing Crecent\nLarge Moon: Waning Crecent", #Day 26
-            "\nSmall Moon: Waning Crecent\nMedium Moon: Waxing Crecent\nLarge Moon: Waning Crecent", #Day 27
-            "\nSmall Moon: Waning Crecent\nMedium Moon: Waxing Crecent\nLarge Moon: New Moon", #Day 28
-            "\nSmall Moon: Waning Crecent\nMedium Moon: First Quarter\nLarge Moon: New Moon", #Day 29
-            "\nSmall Moon: Waning Crecent\nMedium Moon: First Quarter\nLarge Moon: New Moon", #Day 30
+            "", #Day 1
+            "", #Day 2
+            "", #Day 3
+            "", #Day 4
+            "", #Day 5
+            "", #Day 6
+            "", #Day 7
+            "", #Day 8
+            "", #Day 9
+            "", #Day 10
+            "", #Day 11
+            "", #Day 12
+            "", #Day 13
+            "", #Day 14
+            "", #Day 15
+            "", #Day 16
+            "", #Day 17
+            "", #Day 18
+            "", #Day 19
+            "", #Day 20
+            "", #Day 21
+            "", #Day 22
+            "", #Day 23
+            "", #Day 24
+            "", #Day 25
+            "", #Day 26
+            "", #Day 27
+            "", #Day 28
+            "", #Day 29
+            "", #Day 30
         ], 
         #Month 2
         [
-            "\nSmall Moon: New Moon\nMedium Moon: First Quarter\nLarge Moon: New Moon", #Day 1
-            "\nSmall Moon: New Moon\nMedium Moon: First Quarter\nLarge Moon: New Moon", #Day 2
-            "\nSmall Moon: New Moon\nMedium Moon: First Quarter\nLarge Moon: New Moon", #Day 3
-            "\nSmall Moon: Waxing Crecent\nMedium Moon: First Quarter\nLarge Moon: New Moon", #Day 4
-            "\nSmall Moon: Waxing Crecent\nMedium Moon: First Quarter\nLarge Moon: New Moon", #Day 5
-            "\nSmall Moon: Waxing Crecent\nMedium Moon: First Quarter\nLarge Moon: New Moon", #Day 6
-            "\nSmall Moon: Waxing Crecent\nMedium Moon: Waxing Gibbous\nLarge Moon: Waxing Crecent", #Day 7
-            "\nSmall Moon: First Quarter\nMedium Moon: Waxing Gibbous\nLarge Moon: Waxing Crecent", #Day 8
-            "\nSmall Moon: First Quarter\nMedium Moon: Waxing Gibbous\nLarge Moon: Waxing Crecent", #Day 9
-            "\nSmall Moon: First Quarter\nMedium Moon: Waxing Gibbous\nLarge Moon: Waxing Crecent", #Day 10
-            "\nSmall Moon: First Quarter\nMedium Moon: Waxing Gibbous\nLarge Moon: Waxing Crecent", #Day 11
-            "\nSmall Moon: Waxing Gibbous\nMedium Moon: Waxing Gibbous\nLarge Moon: Waxing Crecent", #Day 12
-            "\nSmall Moon: Waxing Gibbous\nMedium Moon: Waxing Gibbous\nLarge Moon: Waxing Crecent", #Day 13
-            "\nSmall Moon: Waxing Gibbous\nMedium Moon: Waxing Gibbous\nLarge Moon: Waxing Crecent", #Day 14
-            "\nSmall Moon: Waxing Gibbous\nMedium Moon: Full Moon\nLarge Moon: Waxing Crecent", #Day 15
-            "\nSmall Moon: Full Moon\nMedium Moon: Full Moon\nLarge Moon: Waxing Crecent", #Day 16
-            "\nSmall Moon: Full Moon\nMedium Moon: Full Moon\nLarge Moon: Waxing Crecent", #Day 17
-            "\nSmall Moon: Full Moon\nMedium Moon: Full Moon\nLarge Moon: Waxing Crecent", #Day 18
-            "\nSmall Moon: Waning Gibbous\nMedium Moon: Full Moon\nLarge Moon: First Quarter", #Day 19
-            "\nSmall Moon: Waning Gibbous\nMedium Moon: Full Moon\nLarge Moon: First Quarter", #Day 20
-            "\nSmall Moon: Waning Gibbous\nMedium Moon: Waning Gibbous\nLarge Moon: First Quarter", #Day 21
-            "\nSmall Moon: Waning Gibbous\nMedium Moon: Waning Gibbous\nLarge Moon: First Quarter", #Day 22
-            "\nSmall Moon: Last Quarter\nMedium Moon: Waning Gibbous\nLarge Moon: First Quarter", #Day 23
-            "\nSmall Moon: Last Quarter\nMedium Moon: Waning Gibbous\nLarge Moon: First Quarter", #Day 24
-            "\nSmall Moon: Last Quarter\nMedium Moon: Waning Gibbous\nLarge Moon: First Quarter", #Day 25
-            "\nSmall Moon: Last Quarter\nMedium Moon: Waning Gibbous\nLarge Moon: First Quarter", #Day 26
-            "\nSmall Moon: Waning Crecent\nMedium Moon: Waning Gibbous\nLarge Moon: First Quarter", #Day 27
-            "\nSmall Moon: Waning Crecent\nMedium Moon: Waning Gibbous\nLarge Moon: First Quarter", #Day 28
-            "\nSmall Moon: Waning Crecent\nMedium Moon: Last Quarter\nLarge Moon: First Quarter", #Day 29
-            "\nSmall Moon: Waning Crecent\nMedium Moon: Last Quarter\nLarge Moon: First Quarter", #Day 30
+            "", #Day 1
+            "", #Day 2
+            "", #Day 3
+            "", #Day 4
+            "", #Day 5
+            "", #Day 6
+            "", #Day 7
+            "", #Day 8
+            "", #Day 9
+            "", #Day 10
+            "", #Day 11
+            "", #Day 12
+            "", #Day 13
+            "", #Day 14
+            "", #Day 15
+            "", #Day 16
+            "", #Day 17
+            "", #Day 18
+            "", #Day 19
+            "", #Day 20
+            "", #Day 21
+            "", #Day 22
+            "", #Day 23
+            "", #Day 24
+            "", #Day 25
+            "", #Day 26
+            "", #Day 27
+            "", #Day 28
+            "", #Day 29
+            "", #Day 30
         ], 
         #Month 3
         [
-            "\nSmall Moon: New Moon\nMedium Moon: Last Quarter\nLarge Moon: Waxing Gibbous", #Day 1
-            "\nSmall Moon: New Moon\nMedium Moon: Last Quarter\nLarge Moon: Waxing Gibbous", #Day 2
-            "\nSmall Moon: New Moon\nMedium Moon: Last Quarter\nLarge Moon: Waxing Gibbous", #Day 3
-            "\nSmall Moon: Waxing Crecent\nMedium Moon: Last Quarter\nLarge Moon: Waxing Gibbous", #Day 4
-            "\nSmall Moon: Waxing Crecent\nMedium Moon: Last Quarter\nLarge Moon: Waxing Gibbous", #Day 5
-            "\nSmall Moon: Waxing Crecent\nMedium Moon: Last Quarter\nLarge Moon: Waxing Gibbous", #Day 6
-            "\nSmall Moon: Waxing Crecent\nMedium Moon: Waning Crecent\nLarge Moon: Waxing Gibbous", #Day 7
-            "\nSmall Moon: First Quarter\nMedium Moon: Waning Crecent\nLarge Moon: Waxing Gibbous", #Day 8
-            "\nSmall Moon: First Quarter\nMedium Moon: Waning Crecent\nLarge Moon: Waxing Gibbous", #Day 9
-            "\nSmall Moon: First Quarter\nMedium Moon: Waning Crecent\nLarge Moon: Waxing Gibbous", #Day 10
-            "\nSmall Moon: First Quarter\nMedium Moon: Waning Crecent\nLarge Moon: Waxing Gibbous", #Day 11
-            "\nSmall Moon: Waxing Gibbous\nMedium Moon: Waning Crecent\nLarge Moon: Waxing Gibbous", #Day 12
-            "\nSmall Moon: Waxing Gibbous\nMedium Moon: Waning Crecent\nLarge Moon: Full Moon", #Day 13
-            "\nSmall Moon: Waxing Gibbous\nMedium Moon: Waning Crecent\nLarge Moon: Full Moon", #Day 14
-            "\nSmall Moon: Waxing Gibbous\nMedium Moon: New Moon\nLarge Moon: Full Moon", #Day 15
-            "\nSmall Moon: Full Moon\nMedium Moon: New Moon\nLarge Moon: Full Moon", #Day 16
-            "\nSmall Moon: Full Moon\nMedium Moon: New Moon\nLarge Moon: Full Moon", #Day 17
-            "\nSmall Moon: Full Moon\nMedium Moon: New Moon\nLarge Moon: Full Moon", #Day 18
-            "\nSmall Moon: Waning Gibbous\nMedium Moon: New Moon\nLarge Moon: Full Moon", #Day 19
-            "\nSmall Moon: Waning Gibbous\nMedium Moon: New Moon\nLarge Moon: Full Moon", #Day 20
-            "\nSmall Moon: Waning Gibbous\nMedium Moon: Waxing Crecent\nLarge Moon: Full Moon", #Day 21
-            "\nSmall Moon: Waning Gibbous\nMedium Moon: Waxing Crecent\nLarge Moon: Waning Gibbous", #Day 22
-            "\nSmall Moon: Last Quarter\nMedium Moon: Waxing Crecent\nLarge Moon: Waning Gibbous", #Day 23
-            "\nSmall Moon: Last Quarter\nMedium Moon: Waxing Crecent\nLarge Moon: Waning Gibbous", #Day 24
-            "\nSmall Moon: Last Quarter\nMedium Moon: Waxing Crecent\nLarge Moon: Waning Gibbous", #Day 25
-            "\nSmall Moon: Last Quarter\nMedium Moon: Waxing Crecent\nLarge Moon: Waning Gibbous", #Day 26
-            "\nSmall Moon: Waning Crecent\nMedium Moon: Waxing Crecent\nLarge Moon: Waning Gibbous", #Day 27
-            "\nSmall Moon: Waning Crecent\nMedium Moon: Waxing Crecent\nLarge Moon: Waning Gibbous", #Day 28
-            "\nSmall Moon: Waning Crecent\nMedium Moon: First Quarter\nLarge Moon: Waning Gibbous", #Day 29
-            "\nSmall Moon: Waning Crecent\nMedium Moon: First Quarter\nLarge Moon: Waning Gibbous", #Day 30
+            "", #Day 1
+            "", #Day 2
+            "", #Day 3
+            "", #Day 4
+            "", #Day 5
+            "", #Day 6
+            "", #Day 7
+            "", #Day 8
+            "", #Day 9
+            "", #Day 10
+            "", #Day 11
+            "", #Day 12
+            "", #Day 13
+            "", #Day 14
+            "", #Day 15
+            "", #Day 16
+            "", #Day 17
+            "", #Day 18
+            "", #Day 19
+            "", #Day 20
+            "", #Day 21
+            "", #Day 22
+            "", #Day 23
+            "", #Day 24
+            "", #Day 25
+            "", #Day 26
+            "", #Day 27
+            "", #Day 28
+            "", #Day 29
+            "", #Day 30
         ], 
         #Month 4
         [
-            "\nSmall Moon: New Moon\nMedium Moon: First Quarter\nLarge Moon: Waning Gibbous", #Day 1
-            "\nSmall Moon: New Moon\nMedium Moon: First Quarter\nLarge Moon: Waning Gibbous", #Day 2
-            "\nSmall Moon: New Moon\nMedium Moon: First Quarter\nLarge Moon: Waning Gibbous", #Day 3
-            "\nSmall Moon: Waxing Crecent\nMedium Moon: First Quarter\nLarge Moon: Last Quarter", #Day 4
-            "\nSmall Moon: Waxing Crecent\nMedium Moon: First Quarter\nLarge Moon: Last Quarter", #Day 5
-            "\nSmall Moon: Waxing Crecent\nMedium Moon: First Quarter\nLarge Moon: Last Quarter", #Day 6
-            "\nSmall Moon: Waxing Crecent\nMedium Moon: Waxing Gibbous\nLarge Moon: Last Quarter", #Day 7
-            "\nSmall Moon: First Quarter\nMedium Moon: Waxing Gibbous\nLarge Moon: Last Quarter", #Day 8
-            "\nSmall Moon: First Quarter\nMedium Moon: Waxing Gibbous\nLarge Moon: Last Quarter", #Day 9
-            "\nSmall Moon: First Quarter\nMedium Moon: Waxing Gibbous\nLarge Moon: Last Quarter", #Day 10
-            "\nSmall Moon: First Quarter\nMedium Moon: Waxing Gibbous\nLarge Moon: Last Quarter", #Day 11
-            "\nSmall Moon: Waxing Gibbous\nMedium Moon: Waxing Gibbous\nLarge Moon: Last Quarter", #Day 12
-            "\nSmall Moon: Waxing Gibbous\nMedium Moon: Waxing Gibbous\nLarge Moon: Last Quarter", #Day 13
-            "\nSmall Moon: Waxing Gibbous\nMedium Moon: Waxing Gibbous\nLarge Moon: Last Quarter", #Day 14
-            "\nSmall Moon: Waxing Gibbous\nMedium Moon: Full Moon\nLarge Moon: Last Quarter", #Day 15
-            "\nSmall Moon: Full Moon\nMedium Moon: Full Moon\nLarge Moon: Waning Crecent", #Day 16
-            "\nSmall Moon: Full Moon\nMedium Moon: Full Moon\nLarge Moon: Waning Crecent", #Day 17
-            "\nSmall Moon: Full Moon\nMedium Moon: Full Moon\nLarge Moon: Waning Crecent", #Day 18
-            "\nSmall Moon: Waning Gibbous\nMedium Moon: Full Moon\nLarge Moon: Waning Crecent", #Day 19
-            "\nSmall Moon: Waning Gibbous\nMedium Moon: Full Moon\nLarge Moon: Waning Crecent", #Day 20
-            "\nSmall Moon: Waning Gibbous\nMedium Moon: Waning Gibbous\nLarge Moon: Waning Crecent", #Day 21
-            "\nSmall Moon: Waning Gibbous\nMedium Moon: Waning Gibbous\nLarge Moon: Waning Crecent", #Day 22
-            "\nSmall Moon: Last Quarter\nMedium Moon: Waning Gibbous\nLarge Moon: Waning Crecent", #Day 23
-            "\nSmall Moon: Last Quarter\nMedium Moon: Waning Gibbous\nLarge Moon: Waning Crecent", #Day 24
-            "\nSmall Moon: Last Quarter\nMedium Moon: Waning Gibbous\nLarge Moon: Waning Crecent", #Day 25
-            "\nSmall Moon: Last Quarter\nMedium Moon: Waning Gibbous\nLarge Moon: Waning Crecent", #Day 26
-            "\nSmall Moon: Waning Crecent\nMedium Moon: Waning Gibbous\nLarge Moon: Waning Crecent", #Day 27
-            "\nSmall Moon: Waning Crecent\nMedium Moon: Waning Gibbous\nLarge Moon: New Moon", #Day 28
-            "\nSmall Moon: Waning Crecent\nMedium Moon: Last Quarter\nLarge Moon: New Moon", #Day 29
-            "\nSmall Moon: Waning Crecent\nMedium Moon: Last Quarter\nLarge Moon: New Moon", #Day 30
+            "", #Day 1
+            "", #Day 2
+            "", #Day 3
+            "", #Day 4
+            "", #Day 5
+            "", #Day 6
+            "", #Day 7
+            "", #Day 8
+            "", #Day 9
+            "", #Day 10
+            "", #Day 11
+            "", #Day 12
+            "", #Day 13
+            "", #Day 14
+            "", #Day 15
+            "", #Day 16
+            "", #Day 17
+            "", #Day 18
+            "", #Day 19
+            "", #Day 20
+            "", #Day 21
+            "", #Day 22
+            "", #Day 23
+            "", #Day 24
+            "", #Day 25
+            "", #Day 26
+            "", #Day 27
+            "", #Day 28
+            "", #Day 29
+            "", #Day 30
         ], 
         #Month 5
         [
-            "\nSmall Moon: New Moon\nMedium Moon: Last Quarter\nLarge Moon: New Moon", #Day 1
-            "\nSmall Moon: New Moon\nMedium Moon: Last Quarter\nLarge Moon: New Moon", #Day 2
-            "\nSmall Moon: New Moon\nMedium Moon: Last Quarter\nLarge Moon: New Moon", #Day 3
-            "\nSmall Moon: Waxing Crecent\nMedium Moon: Last Quarter\nLarge Moon: New Moon", #Day 4
-            "\nSmall Moon: Waxing Crecent\nMedium Moon: Last Quarter\nLarge Moon: New Moon", #Day 5
-            "\nSmall Moon: Waxing Crecent\nMedium Moon: Last Quarter\nLarge Moon: New Moon", #Day 6
-            "\nSmall Moon: Waxing Crecent\nMedium Moon: Waning Crecent\nLarge Moon: Waxing Crecent", #Day 7
-            "\nSmall Moon: First Quarter\nMedium Moon: Waning Crecent\nLarge Moon: Waxing Crecent", #Day 8
-            "\nSmall Moon: First Quarter\nMedium Moon: Waning Crecent\nLarge Moon: Waxing Crecent", #Day 9
-            "\nSmall Moon: First Quarter\nMedium Moon: Waning Crecent\nLarge Moon: Waxing Crecent", #Day 10
-            "\nSmall Moon: First Quarter\nMedium Moon: Waning Crecent\nLarge Moon: Waxing Crecent", #Day 11
-            "\nSmall Moon: Waxing Gibbous\nMedium Moon: Waning Crecent\nLarge Moon: Waxing Crecent", #Day 12
-            "\nSmall Moon: Waxing Gibbous\nMedium Moon: Waning Crecent\nLarge Moon: Waxing Crecent", #Day 13
-            "\nSmall Moon: Waxing Gibbous\nMedium Moon: Waning Crecent\nLarge Moon: Waxing Crecent", #Day 14
-            "\nSmall Moon: Waxing Gibbous\nMedium Moon: New Moon\nLarge Moon: Waxing Crecent", #Day 15
-            "\nSmall Moon: Full Moon\nMedium Moon: New Moon\nLarge Moon: Waxing Crecent", #Day 16
-            "\nSmall Moon: Full Moon\nMedium Moon: New Moon\nLarge Moon: Waxing Crecent", #Day 17
-            "\nSmall Moon: Full Moon\nMedium Moon: New Moon\nLarge Moon: Waxing Crecent", #Day 18
-            "\nSmall Moon: Waning Gibbous\nMedium Moon: New Moon\nLarge Moon: First Quarter", #Day 19
-            "\nSmall Moon: Waning Gibbous\nMedium Moon: New Moon\nLarge Moon: First Quarter", #Day 20
-            "\nSmall Moon: Waning Gibbous\nMedium Moon: Waxing Crecent\nLarge Moon: First Quarter", #Day 21
-            "\nSmall Moon: Waning Gibbous\nMedium Moon: Waxing Crecent\nLarge Moon: First Quarter", #Day 22
-            "\nSmall Moon: Last Quarter\nMedium Moon: Waxing Crecent\nLarge Moon: First Quarter", #Day 23
-            "\nSmall Moon: Last Quarter\nMedium Moon: Waxing Crecent\nLarge Moon: First Quarter", #Day 24
-            "\nSmall Moon: Last Quarter\nMedium Moon: Waxing Crecent\nLarge Moon: First Quarter", #Day 25
-            "\nSmall Moon: Last Quarter\nMedium Moon: Waxing Crecent\nLarge Moon: First Quarter", #Day 26
-            "\nSmall Moon: Waning Crecent\nMedium Moon: Waxing Crecent\nLarge Moon: First Quarter", #Day 27
-            "\nSmall Moon: Waning Crecent\nMedium Moon: Waxing Crecent\nLarge Moon: First Quarter", #Day 28
-            "\nSmall Moon: Waning Crecent\nMedium Moon: First Quarter\nLarge Moon: First Quarter", #Day 29
-            "\nSmall Moon: Waning Crecent\nMedium Moon: First Quarter\nLarge Moon: First Quarter", #Day 30
+            "", #Day 1
+            "", #Day 2
+            "", #Day 3
+            "", #Day 4
+            "", #Day 5
+            "", #Day 6
+            "", #Day 7
+            "", #Day 8
+            "", #Day 9
+            "", #Day 10
+            "", #Day 11
+            "", #Day 12
+            "", #Day 13
+            "", #Day 14
+            "", #Day 15
+            "", #Day 16
+            "", #Day 17
+            "", #Day 18
+            "", #Day 19
+            "", #Day 20
+            "", #Day 21
+            "", #Day 22
+            "", #Day 23
+            "", #Day 24
+            "", #Day 25
+            "", #Day 26
+            "", #Day 27
+            "", #Day 28
+            "", #Day 29
+            "", #Day 30
         ], 
         #Month 6
         [
-            "\nSmall Moon: New Moon\nMedium Moon: First Quarter\nLarge Moon: Waxing Gibbous", #Day 1
-            "\nSmall Moon: New Moon\nMedium Moon: First Quarter\nLarge Moon: Waxing Gibbous", #Day 2
-            "\nSmall Moon: New Moon\nMedium Moon: First Quarter\nLarge Moon: Waxing Gibbous", #Day 3
-            "\nSmall Moon: Waxing Crecent\nMedium Moon: First Quarter\nLarge Moon: Waxing Gibbous", #Day 4
-            "\nSmall Moon: Waxing Crecent\nMedium Moon: First Quarter\nLarge Moon: Waxing Gibbous", #Day 5
-            "\nSmall Moon: Waxing Crecent\nMedium Moon: First Quarter\nLarge Moon: Waxing Gibbous", #Day 6
-            "\nSmall Moon: Waxing Crecent\nMedium Moon: Waxing Gibbous\nLarge Moon: Waxing Gibbous", #Day 7
-            "\nSmall Moon: First Quarter\nMedium Moon: Waxing Gibbous\nLarge Moon: Waxing Gibbous", #Day 8
-            "\nSmall Moon: First Quarter\nMedium Moon: Waxing Gibbous\nLarge Moon: Waxing Gibbous", #Day 9
-            "\nSmall Moon: First Quarter\nMedium Moon: Waxing Gibbous\nLarge Moon: Waxing Gibbous", #Day 10
-            "\nSmall Moon: First Quarter\nMedium Moon: Waxing Gibbous\nLarge Moon: Waxing Gibbous", #Day 11
-            "\nSmall Moon: Waxing Gibbous\nMedium Moon: Waxing Gibbous\nLarge Moon: Waxing Gibbous", #Day 12
-            "\nSmall Moon: Waxing Gibbous\nMedium Moon: Waxing Gibbous\nLarge Moon: Full Moon", #Day 13
-            "\nSmall Moon: Waxing Gibbous\nMedium Moon: Waxing Gibbous\nLarge Moon: Full Moon", #Day 14
-            "\nSmall Moon: Waxing Gibbous\nMedium Moon: Full Moon\nLarge Moon: Full Moon", #Day 15
-            "\nSmall Moon: Full Moon\nMedium Moon: Full Moon\nLarge Moon: Full Moon", #Day 16
-            "\nSmall Moon: Full Moon\nMedium Moon: Full Moon\nLarge Moon: Full Moon", #Day 17
-            "\nSmall Moon: Full Moon\nMedium Moon: Full Moon\nLarge Moon: Full Moon", #Day 18
-            "\nSmall Moon: Waning Gibbous\nMedium Moon: Full Moon\nLarge Moon: Full Moon", #Day 19
-            "\nSmall Moon: Waning Gibbous\nMedium Moon: Full Moon\nLarge Moon: Full Moon", #Day 20
-            "\nSmall Moon: Waning Gibbous\nMedium Moon: Waning Gibbous\nLarge Moon: Full Moon", #Day 21
-            "\nSmall Moon: Waning Gibbous\nMedium Moon: Waning Gibbous\nLarge Moon: Waning Gibbous", #Day 22
-            "\nSmall Moon: Last Quarter\nMedium Moon: Waning Gibbous\nLarge Moon: Waning Gibbous", #Day 23
-            "\nSmall Moon: Last Quarter\nMedium Moon: Waning Gibbous\nLarge Moon: Waning Gibbous", #Day 24
-            "\nSmall Moon: Last Quarter\nMedium Moon: Waning Gibbous\nLarge Moon: Waning Gibbous", #Day 25
-            "\nSmall Moon: Last Quarter\nMedium Moon: Waning Gibbous\nLarge Moon: Waning Gibbous", #Day 26
-            "\nSmall Moon: Waning Crecent\nMedium Moon: Waning Gibbous\nLarge Moon: Waning Gibbous", #Day 27
-            "\nSmall Moon: Waning Crecent\nMedium Moon: Waning Gibbous\nLarge Moon: Waning Gibbous", #Day 28
-            "\nSmall Moon: Waning Crecent\nMedium Moon: Last Quarter\nLarge Moon: Waning Gibbous", #Day 29
-            "\nSmall Moon: Waning Crecent\nMedium Moon: Last Quarter\nLarge Moon: Waning Gibbous", #Day 30
+            "", #Day 1
+            "", #Day 2
+            "", #Day 3
+            "", #Day 4
+            "", #Day 5
+            "", #Day 6
+            "", #Day 7
+            "", #Day 8
+            "", #Day 9
+            "", #Day 10
+            "", #Day 11
+            "", #Day 12
+            "", #Day 13
+            "", #Day 14
+            "", #Day 15
+            "", #Day 16
+            "", #Day 17
+            "", #Day 18
+            "", #Day 19
+            "", #Day 20
+            "", #Day 21
+            "", #Day 22
+            "", #Day 23
+            "", #Day 24
+            "", #Day 25
+            "", #Day 26
+            "", #Day 27
+            "", #Day 28
+            "", #Day 29
+            "", #Day 30
         ], 
         #Month 7
         [
-            "\nSmall Moon: New Moon\nMedium Moon: Last Quarter\nLarge Moon: Waning Gibbous", #Day 1
-            "\nSmall Moon: New Moon\nMedium Moon: Last Quarter\nLarge Moon: Waning Gibbous", #Day 2
-            "\nSmall Moon: New Moon\nMedium Moon: Last Quarter\nLarge Moon: Waning Gibbous", #Day 3
-            "\nSmall Moon: Waxing Crecent\nMedium Moon: Last Quarter\nLarge Moon: Last Quarter", #Day 4
-            "\nSmall Moon: Waxing Crecent\nMedium Moon: Last Quarter\nLarge Moon: Last Quarter", #Day 5
-            "\nSmall Moon: Waxing Crecent\nMedium Moon: Last Quarter\nLarge Moon: Last Quarter", #Day 6
-            "\nSmall Moon: Waxing Crecent\nMedium Moon: Waning Crecent\nLarge Moon: Last Quarter", #Day 7
-            "\nSmall Moon: First Quarter\nMedium Moon: Waning Crecent\nLarge Moon: Last Quarter", #Day 8
-            "\nSmall Moon: First Quarter\nMedium Moon: Waning Crecent\nLarge Moon: Last Quarter", #Day 9
-            "\nSmall Moon: First Quarter\nMedium Moon: Waning Crecent\nLarge Moon: Last Quarter", #Day 10
-            "\nSmall Moon: First Quarter\nMedium Moon: Waning Crecent\nLarge Moon: Last Quarter", #Day 11
-            "\nSmall Moon: Waxing Gibbous\nMedium Moon: Waning Crecent\nLarge Moon: Last Quarter", #Day 12
-            "\nSmall Moon: Waxing Gibbous\nMedium Moon: Waning Crecent\nLarge Moon: Last Quarter", #Day 13
-            "\nSmall Moon: Waxing Gibbous\nMedium Moon: Waning Crecent\nLarge Moon: Last Quarter", #Day 14
-            "\nSmall Moon: Waxing Gibbous\nMedium Moon: New Moon\nLarge Moon: Last Quarter", #Day 15
-            "\nSmall Moon: Full Moon\nMedium Moon: New Moon\nLarge Moon: Waning Crecent", #Day 16
-            "\nSmall Moon: Full Moon\nMedium Moon: New Moon\nLarge Moon: Waning Crecent", #Day 17
-            "\nSmall Moon: Full Moon\nMedium Moon: New Moon\nLarge Moon: Waning Crecent", #Day 18
-            "\nSmall Moon: Waning Gibbous\nMedium Moon: New Moon\nLarge Moon: Waning Crecent", #Day 19
-            "\nSmall Moon: Waning Gibbous\nMedium Moon: New Moon\nLarge Moon: Waning Crecent", #Day 20
-            "\nSmall Moon: Waning Gibbous\nMedium Moon: Waxing Crecent\nLarge Moon: Waning Crecent", #Day 21
-            "\nSmall Moon: Waning Gibbous\nMedium Moon: Waxing Crecent\nLarge Moon: Waning Crecent", #Day 22
-            "\nSmall Moon: Last Quarter\nMedium Moon: Waxing Crecent\nLarge Moon: Waning Crecent", #Day 23
-            "\nSmall Moon: Last Quarter\nMedium Moon: Waxing Crecent\nLarge Moon: Waning Crecent", #Day 24
-            "\nSmall Moon: Last Quarter\nMedium Moon: Waxing Crecent\nLarge Moon: Waning Crecent", #Day 25
-            "\nSmall Moon: Last Quarter\nMedium Moon: Waxing Crecent\nLarge Moon: Waning Crecent", #Day 26
-            "\nSmall Moon: Waning Crecent\nMedium Moon: Waxing Crecent\nLarge Moon: Waning Crecent", #Day 27
-            "\nSmall Moon: Waning Crecent\nMedium Moon: Waxing Crecent\nLarge Moon: New Moon", #Day 28
-            "\nSmall Moon: Waning Crecent\nMedium Moon: First Quarter\nLarge Moon: New Moon", #Day 29
-            "\nSmall Moon: Waning Crecent\nMedium Moon: First Quarter\nLarge Moon: New Moon", #Day 30
+            "", #Day 1
+            "", #Day 2
+            "", #Day 3
+            "", #Day 4
+            "", #Day 5
+            "", #Day 6
+            "", #Day 7
+            "", #Day 8
+            "", #Day 9
+            "", #Day 10
+            "", #Day 11
+            "", #Day 12
+            "", #Day 13
+            "", #Day 14
+            "", #Day 15
+            "", #Day 16
+            "", #Day 17
+            "", #Day 18
+            "", #Day 19
+            "", #Day 20
+            "", #Day 21
+            "", #Day 22
+            "", #Day 23
+            "", #Day 24
+            "", #Day 25
+            "", #Day 26
+            "", #Day 27
+            "", #Day 28
+            "", #Day 29
+            "", #Day 30
         ], 
         #Month 8
         [
-            "\nSmall Moon: New Moon\nMedium Moon: First Quarter\nLarge Moon: New Moon", #Day 1
-            "\nSmall Moon: New Moon\nMedium Moon: First Quarter\nLarge Moon: New Moon", #Day 2
-            "\nSmall Moon: New Moon\nMedium Moon: First Quarter\nLarge Moon: New Moon", #Day 3
-            "\nSmall Moon: Waxing Crecent\nMedium Moon: First Quarter\nLarge Moon: New Moon", #Day 4
-            "\nSmall Moon: Waxing Crecent\nMedium Moon: First Quarter\nLarge Moon: New Moon", #Day 5
-            "\nSmall Moon: Waxing Crecent\nMedium Moon: First Quarter\nLarge Moon: New Moon", #Day 6
-            "\nSmall Moon: Waxing Crecent\nMedium Moon: Waxing Gibbous\nLarge Moon: Waxing Crecent", #Day 7
-            "\nSmall Moon: First Quarter\nMedium Moon: Waxing Gibbous\nLarge Moon: Waxing Crecent", #Day 8
-            "\nSmall Moon: First Quarter\nMedium Moon: Waxing Gibbous\nLarge Moon: Waxing Crecent", #Day 9
-            "\nSmall Moon: First Quarter\nMedium Moon: Waxing Gibbous\nLarge Moon: Waxing Crecent", #Day 10
-            "\nSmall Moon: First Quarter\nMedium Moon: Waxing Gibbous\nLarge Moon: Waxing Crecent", #Day 11
-            "\nSmall Moon: Waxing Gibbous\nMedium Moon: Waxing Gibbous\nLarge Moon: Waxing Crecent", #Day 12
-            "\nSmall Moon: Waxing Gibbous\nMedium Moon: Waxing Gibbous\nLarge Moon: Waxing Crecent", #Day 13
-            "\nSmall Moon: Waxing Gibbous\nMedium Moon: Waxing Gibbous\nLarge Moon: Waxing Crecent", #Day 14
-            "\nSmall Moon: Waxing Gibbous\nMedium Moon: Full Moon\nLarge Moon: Waxing Crecent", #Day 15
-            "\nSmall Moon: Full Moon\nMedium Moon: Full Moon\nLarge Moon: Waxing Crecent", #Day 16
-            "\nSmall Moon: Full Moon\nMedium Moon: Full Moon\nLarge Moon: Waxing Crecent", #Day 17
-            "\nSmall Moon: Full Moon\nMedium Moon: Full Moon\nLarge Moon: Waxing Crecent", #Day 18
-            "\nSmall Moon: Waning Gibbous\nMedium Moon: Full Moon\nLarge Moon: First Quarter", #Day 19
-            "\nSmall Moon: Waning Gibbous\nMedium Moon: Full Moon\nLarge Moon: First Quarter", #Day 20
-            "\nSmall Moon: Waning Gibbous\nMedium Moon: Waning Gibbous\nLarge Moon: First Quarter", #Day 21
-            "\nSmall Moon: Waning Gibbous\nMedium Moon: Waning Gibbous\nLarge Moon: First Quarter", #Day 22
-            "\nSmall Moon: Last Quarter\nMedium Moon: Waning Gibbous\nLarge Moon: First Quarter", #Day 23
-            "\nSmall Moon: Last Quarter\nMedium Moon: Waning Gibbous\nLarge Moon: First Quarter", #Day 24
-            "\nSmall Moon: Last Quarter\nMedium Moon: Waning Gibbous\nLarge Moon: First Quarter", #Day 25
-            "\nSmall Moon: Last Quarter\nMedium Moon: Waning Gibbous\nLarge Moon: First Quarter", #Day 26
-            "\nSmall Moon: Waning Crecent\nMedium Moon: Waning Gibbous\nLarge Moon: First Quarter", #Day 27
-            "\nSmall Moon: Waning Crecent\nMedium Moon: Waning Gibbous\nLarge Moon: First Quarter", #Day 28
-            "\nSmall Moon: Waning Crecent\nMedium Moon: Last Quarter\nLarge Moon: First Quarter", #Day 29
-            "\nSmall Moon: Waning Crecent\nMedium Moon: Last Quarter\nLarge Moon: First Quarter", #Day 30
+            "", #Day 1
+            "", #Day 2
+            "", #Day 3
+            "", #Day 4
+            "", #Day 5
+            "", #Day 6
+            "", #Day 7
+            "", #Day 8
+            "", #Day 9
+            "", #Day 10
+            "", #Day 11
+            "", #Day 12
+            "", #Day 13
+            "", #Day 14
+            "", #Day 15
+            "", #Day 16
+            "", #Day 17
+            "", #Day 18
+            "", #Day 19
+            "", #Day 20
+            "", #Day 21
+            "", #Day 22
+            "", #Day 23
+            "", #Day 24
+            "", #Day 25
+            "", #Day 26
+            "", #Day 27
+            "", #Day 28
+            "", #Day 29
+            "", #Day 30
         ], 
         #Month 9
         [
-            "\nSmall Moon: New Moon\nMedium Moon: Last Quarter\nLarge Moon: Waxing Gibbous", #Day 1
-            "\nSmall Moon: New Moon\nMedium Moon: Last Quarter\nLarge Moon: Waxing Gibbous", #Day 2
-            "\nSmall Moon: New Moon\nMedium Moon: Last Quarter\nLarge Moon: Waxing Gibbous", #Day 3
-            "\nSmall Moon: Waxing Crecent\nMedium Moon: Last Quarter\nLarge Moon: Waxing Gibbous", #Day 4
-            "\nSmall Moon: Waxing Crecent\nMedium Moon: Last Quarter\nLarge Moon: Waxing Gibbous", #Day 5
-            "\nSmall Moon: Waxing Crecent\nMedium Moon: Last Quarter\nLarge Moon: Waxing Gibbous", #Day 6
-            "\nSmall Moon: Waxing Crecent\nMedium Moon: Waning Crecent\nLarge Moon: Waxing Gibbous", #Day 7
-            "\nSmall Moon: First Quarter\nMedium Moon: Waning Crecent\nLarge Moon: Waxing Gibbous", #Day 8
-            "\nSmall Moon: First Quarter\nMedium Moon: Waning Crecent\nLarge Moon: Waxing Gibbous", #Day 9
-            "\nSmall Moon: First Quarter\nMedium Moon: Waning Crecent\nLarge Moon: Waxing Gibbous", #Day 10
-            "\nSmall Moon: First Quarter\nMedium Moon: Waning Crecent\nLarge Moon: Waxing Gibbous", #Day 11
-            "\nSmall Moon: Waxing Gibbous\nMedium Moon: Waning Crecent\nLarge Moon: Waxing Gibbous", #Day 12
-            "\nSmall Moon: Waxing Gibbous\nMedium Moon: Waning Crecent\nLarge Moon: Full Moon", #Day 13
-            "\nSmall Moon: Waxing Gibbous\nMedium Moon: Waning Crecent\nLarge Moon: Full Moon", #Day 14
-            "\nSmall Moon: Waxing Gibbous\nMedium Moon: New Moon\nLarge Moon: Full Moon", #Day 15
-            "\nSmall Moon: Full Moon\nMedium Moon: New Moon\nLarge Moon: Full Moon", #Day 16
-            "\nSmall Moon: Full Moon\nMedium Moon: New Moon\nLarge Moon: Full Moon", #Day 17
-            "\nSmall Moon: Full Moon\nMedium Moon: New Moon\nLarge Moon: Full Moon", #Day 18
-            "\nSmall Moon: Waning Gibbous\nMedium Moon: New Moon\nLarge Moon: Full Moon", #Day 19
-            "\nSmall Moon: Waning Gibbous\nMedium Moon: New Moon\nLarge Moon: Full Moon", #Day 20
-            "\nSmall Moon: Waning Gibbous\nMedium Moon: Waxing Crecent\nLarge Moon: Full Moon", #Day 21
-            "\nSmall Moon: Waning Gibbous\nMedium Moon: Waxing Crecent\nLarge Moon: Waning Gibbous", #Day 22
-            "\nSmall Moon: Last Quarter\nMedium Moon: Waxing Crecent\nLarge Moon: Waning Gibbous", #Day 23
-            "\nSmall Moon: Last Quarter\nMedium Moon: Waxing Crecent\nLarge Moon: Waning Gibbous", #Day 24
-            "\nSmall Moon: Last Quarter\nMedium Moon: Waxing Crecent\nLarge Moon: Waning Gibbous", #Day 25
-            "\nSmall Moon: Last Quarter\nMedium Moon: Waxing Crecent\nLarge Moon: Waning Gibbous", #Day 26
-            "\nSmall Moon: Waning Crecent\nMedium Moon: Waxing Crecent\nLarge Moon: Waning Gibbous", #Day 27
-            "\nSmall Moon: Waning Crecent\nMedium Moon: Waxing Crecent\nLarge Moon: Waning Gibbous", #Day 28
-            "\nSmall Moon: Waning Crecent\nMedium Moon: First Quarter\nLarge Moon: Waning Gibbous", #Day 29
-            "\nSmall Moon: Waning Crecent\nMedium Moon: First Quarter\nLarge Moon: Waning Gibbous", #Day 30
+            "", #Day 1
+            "", #Day 2
+            "", #Day 3
+            "", #Day 4
+            "", #Day 5
+            "", #Day 6
+            "", #Day 7
+            "", #Day 8
+            "", #Day 9
+            "", #Day 10
+            "", #Day 11
+            "", #Day 12
+            "", #Day 13
+            "", #Day 14
+            "", #Day 15
+            "", #Day 16
+            "", #Day 17
+            "", #Day 18
+            "", #Day 19
+            "", #Day 20
+            "", #Day 21
+            "", #Day 22
+            "", #Day 23
+            "", #Day 24
+            "", #Day 25
+            "", #Day 26
+            "", #Day 27
+            "", #Day 28
+            "", #Day 29
+            "", #Day 30
         ], 
         #Month 10
         [
-            "\nSmall Moon: New Moon\nMedium Moon: First Quarter\nLarge Moon: Waning Gibbous", #Day 1
-            "\nSmall Moon: New Moon\nMedium Moon: First Quarter\nLarge Moon: Waning Gibbous", #Day 2
-            "\nSmall Moon: New Moon\nMedium Moon: First Quarter\nLarge Moon: Waning Gibbous", #Day 3
-            "\nSmall Moon: Waxing Crecent\nMedium Moon: First Quarter\nLarge Moon: Last Quarter", #Day 4
-            "\nSmall Moon: Waxing Crecent\nMedium Moon: First Quarter\nLarge Moon: Last Quarter", #Day 5
-            "\nSmall Moon: Waxing Crecent\nMedium Moon: First Quarter\nLarge Moon: Last Quarter", #Day 6
-            "\nSmall Moon: Waxing Crecent\nMedium Moon: Waxing Gibbous\nLarge Moon: Last Quarter", #Day 7
-            "\nSmall Moon: First Quarter\nMedium Moon: Waxing Gibbous\nLarge Moon: Last Quarter", #Day 8
-            "\nSmall Moon: First Quarter\nMedium Moon: Waxing Gibbous\nLarge Moon: Last Quarter", #Day 9
-            "\nSmall Moon: First Quarter\nMedium Moon: Waxing Gibbous\nLarge Moon: Last Quarter", #Day 10
-            "\nSmall Moon: First Quarter\nMedium Moon: Waxing Gibbous\nLarge Moon: Last Quarter", #Day 11
-            "\nSmall Moon: Waxing Gibbous\nMedium Moon: Waxing Gibbous\nLarge Moon: Last Quarter", #Day 12
-            "\nSmall Moon: Waxing Gibbous\nMedium Moon: Waxing Gibbous\nLarge Moon: Last Quarter", #Day 13
-            "\nSmall Moon: Waxing Gibbous\nMedium Moon: Waxing Gibbous\nLarge Moon: Last Quarter", #Day 14
-            "\nSmall Moon: Waxing Gibbous\nMedium Moon: Full Moon\nLarge Moon: Last Quarter", #Day 15
-            "\nSmall Moon: Full Moon\nMedium Moon: Full Moon\nLarge Moon: Waning Crecent", #Day 16
-            "\nSmall Moon: Full Moon\nMedium Moon: Full Moon\nLarge Moon: Waning Crecent", #Day 17
-            "\nSmall Moon: Full Moon\nMedium Moon: Full Moon\nLarge Moon: Waning Crecent", #Day 18
-            "\nSmall Moon: Waning Gibbous\nMedium Moon: Full Moon\nLarge Moon: Waning Crecent", #Day 19
-            "\nSmall Moon: Waning Gibbous\nMedium Moon: Full Moon\nLarge Moon: Waning Crecent", #Day 20
-            "\nSmall Moon: Waning Gibbous\nMedium Moon: Waning Gibbous\nLarge Moon: Waning Crecent", #Day 21
-            "\nSmall Moon: Waning Gibbous\nMedium Moon: Waning Gibbous\nLarge Moon: Waning Crecent", #Day 22
-            "\nSmall Moon: Last Quarter\nMedium Moon: Waning Gibbous\nLarge Moon: Waning Crecent", #Day 23
-            "\nSmall Moon: Last Quarter\nMedium Moon: Waning Gibbous\nLarge Moon: Waning Crecent", #Day 24
-            "\nSmall Moon: Last Quarter\nMedium Moon: Waning Gibbous\nLarge Moon: Waning Crecent", #Day 25
-            "\nSmall Moon: Last Quarter\nMedium Moon: Waning Gibbous\nLarge Moon: Waning Crecent", #Day 26
-            "\nSmall Moon: Waning Crecent\nMedium Moon: Waning Gibbous\nLarge Moon: Waning Crecent", #Day 27
-            "\nSmall Moon: Waning Crecent\nMedium Moon: Waning Gibbous\nLarge Moon: New Moon", #Day 28
-            "\nSmall Moon: Waning Crecent\nMedium Moon: Last Quarter\nLarge Moon: New Moon", #Day 29
-            "\nSmall Moon: Waning Crecent\nMedium Moon: Last Quarter\nLarge Moon: New Moon", #Day 30
+            "", #Day 1
+            "", #Day 2
+            "", #Day 3
+            "", #Day 4
+            "", #Day 5
+            "", #Day 6
+            "", #Day 7
+            "", #Day 8
+            "", #Day 9
+            "", #Day 10
+            "", #Day 11
+            "", #Day 12
+            "", #Day 13
+            "", #Day 14
+            "", #Day 15
+            "", #Day 16
+            "", #Day 17
+            "", #Day 18
+            "", #Day 19
+            "", #Day 20
+            "", #Day 21
+            "", #Day 22
+            "", #Day 23
+            "", #Day 24
+            "", #Day 25
+            "", #Day 26
+            "", #Day 27
+            "", #Day 28
+            "", #Day 29
+            "", #Day 30
         ], 
         #Month 11
         [
-            "\nSmall Moon: New Moon\nMedium Moon: Last Quarter\nLarge Moon: New Moon", #Day 1
-            "\nSmall Moon: New Moon\nMedium Moon: Last Quarter\nLarge Moon: New Moon", #Day 2
-            "\nSmall Moon: New Moon\nMedium Moon: Last Quarter\nLarge Moon: New Moon", #Day 3
-            "\nSmall Moon: Waxing Crecent\nMedium Moon: Last Quarter\nLarge Moon: New Moon", #Day 4
-            "\nSmall Moon: Waxing Crecent\nMedium Moon: Last Quarter\nLarge Moon: New Moon", #Day 5
-            "\nSmall Moon: Waxing Crecent\nMedium Moon: Last Quarter\nLarge Moon: New Moon", #Day 6
-            "\nSmall Moon: Waxing Crecent\nMedium Moon: Waning Crecent\nLarge Moon: Waxing Crecent", #Day 7
-            "\nSmall Moon: First Quarter\nMedium Moon: Waning Crecent\nLarge Moon: Waxing Crecent", #Day 8
-            "\nSmall Moon: First Quarter\nMedium Moon: Waning Crecent\nLarge Moon: Waxing Crecent", #Day 9
-            "\nSmall Moon: First Quarter\nMedium Moon: Waning Crecent\nLarge Moon: Waxing Crecent", #Day 10
-            "\nSmall Moon: First Quarter\nMedium Moon: Waning Crecent\nLarge Moon: Waxing Crecent", #Day 11
-            "\nSmall Moon: Waxing Gibbous\nMedium Moon: Waning Crecent\nLarge Moon: Waxing Crecent", #Day 12
-            "\nSmall Moon: Waxing Gibbous\nMedium Moon: Waning Crecent\nLarge Moon: Waxing Crecent", #Day 13
-            "\nSmall Moon: Waxing Gibbous\nMedium Moon: Waning Crecent\nLarge Moon: Waxing Crecent", #Day 14
-            "\nSmall Moon: Waxing Gibbous\nMedium Moon: New Moon\nLarge Moon: Waxing Crecent", #Day 15
-            "\nSmall Moon: Full Moon\nMedium Moon: New Moon\nLarge Moon: Waxing Crecent", #Day 16
-            "\nSmall Moon: Full Moon\nMedium Moon: New Moon\nLarge Moon: Waxing Crecent", #Day 17
-            "\nSmall Moon: Full Moon\nMedium Moon: New Moon\nLarge Moon: Waxing Crecent", #Day 18
-            "\nSmall Moon: Waning Gibbous\nMedium Moon: New Moon\nLarge Moon: First Quarter", #Day 19
-            "\nSmall Moon: Waning Gibbous\nMedium Moon: New Moon\nLarge Moon: First Quarter", #Day 20
-            "\nSmall Moon: Waning Gibbous\nMedium Moon: Waxing Crecent\nLarge Moon: First Quarter", #Day 21
-            "\nSmall Moon: Waning Gibbous\nMedium Moon: Waxing Crecent\nLarge Moon: First Quarter", #Day 22
-            "\nSmall Moon: Last Quarter\nMedium Moon: Waxing Crecent\nLarge Moon: First Quarter", #Day 23
-            "\nSmall Moon: Last Quarter\nMedium Moon: Waxing Crecent\nLarge Moon: First Quarter", #Day 24
-            "\nSmall Moon: Last Quarter\nMedium Moon: Waxing Crecent\nLarge Moon: First Quarter", #Day 25
-            "\nSmall Moon: Last Quarter\nMedium Moon: Waxing Crecent\nLarge Moon: First Quarter", #Day 26
-            "\nSmall Moon: Waning Crecent\nMedium Moon: Waxing Crecent\nLarge Moon: First Quarter", #Day 27
-            "\nSmall Moon: Waning Crecent\nMedium Moon: Waxing Crecent\nLarge Moon: First Quarter", #Day 28
-            "\nSmall Moon: Waning Crecent\nMedium Moon: First Quarter\nLarge Moon: First Quarter", #Day 29
-            "\nSmall Moon: Waning Crecent\nMedium Moon: First Quarter\nLarge Moon: First Quarter", #Day 30
+            "", #Day 1
+            "", #Day 2
+            "", #Day 3
+            "", #Day 4
+            "", #Day 5
+            "", #Day 6
+            "", #Day 7
+            "", #Day 8
+            "", #Day 9
+            "", #Day 10
+            "", #Day 11
+            "", #Day 12
+            "", #Day 13
+            "", #Day 14
+            "", #Day 15
+            "", #Day 16
+            "", #Day 17
+            "", #Day 18
+            "", #Day 19
+            "", #Day 20
+            "", #Day 21
+            "", #Day 22
+            "", #Day 23
+            "", #Day 24
+            "", #Day 25
+            "", #Day 26
+            "", #Day 27
+            "", #Day 28
+            "", #Day 29
+            "", #Day 30
         ], 
         #Month 12
         [
-            "\nSmall Moon: New Moon\nMedium Moon: First Quarter\nLarge Moon: Waxing Gibbous", #Day 1
-            "\nSmall Moon: New Moon\nMedium Moon: First Quarter\nLarge Moon: Waxing Gibbous", #Day 2
-            "\nSmall Moon: New Moon\nMedium Moon: First Quarter\nLarge Moon: Waxing Gibbous", #Day 3
-            "\nSmall Moon: Waxing Crecent\nMedium Moon: First Quarter\nLarge Moon: Waxing Gibbous", #Day 4
-            "\nSmall Moon: Waxing Crecent\nMedium Moon: First Quarter\nLarge Moon: Waxing Gibbous", #Day 5
-            "\nSmall Moon: Waxing Crecent\nMedium Moon: First Quarter\nLarge Moon: Waxing Gibbous", #Day 6
-            "\nSmall Moon: Waxing Crecent\nMedium Moon: Waxing Gibbous\nLarge Moon: Waxing Gibbous", #Day 7
-            "\nSmall Moon: First Quarter\nMedium Moon: Waxing Gibbous\nLarge Moon: Waxing Gibbous", #Day 8
-            "\nSmall Moon: First Quarter\nMedium Moon: Waxing Gibbous\nLarge Moon: Waxing Gibbous", #Day 9
-            "\nSmall Moon: First Quarter\nMedium Moon: Waxing Gibbous\nLarge Moon: Waxing Gibbous", #Day 10
-            "\nSmall Moon: First Quarter\nMedium Moon: Waxing Gibbous\nLarge Moon: Waxing Gibbous", #Day 11
-            "\nSmall Moon: Waxing Gibbous\nMedium Moon: Waxing Gibbous\nLarge Moon: Waxing Gibbous", #Day 12
-            "\nSmall Moon: Waxing Gibbous\nMedium Moon: Waxing Gibbous\nLarge Moon: Full Moon", #Day 13
-            "\nSmall Moon: Waxing Gibbous\nMedium Moon: Waxing Gibbous\nLarge Moon: Full Moon", #Day 14
-            "\nSmall Moon: Waxing Gibbous\nMedium Moon: Full Moon\nLarge Moon: Full Moon", #Day 15
-            "\nSmall Moon: Full Moon\nMedium Moon: Full Moon\nLarge Moon: Full Moon", #Day 16
-            "\nSmall Moon: Full Moon\nMedium Moon: Full Moon\nLarge Moon: Full Moon", #Day 17
-            "\nSmall Moon: Full Moon\nMedium Moon: Full Moon\nLarge Moon: Full Moon", #Day 18
-            "\nSmall Moon: Waning Gibbous\nMedium Moon: Full Moon\nLarge Moon: Full Moon", #Day 19
-            "\nSmall Moon: Waning Gibbous\nMedium Moon: Full Moon\nLarge Moon: Full Moon", #Day 20
-            "\nSmall Moon: Waning Gibbous\nMedium Moon: Waning Gibbous\nLarge Moon: Full Moon", #Day 21
-            "\nSmall Moon: Waning Gibbous\nMedium Moon: Waning Gibbous\nLarge Moon: Waning Gibbous", #Day 22
-            "\nSmall Moon: Last Quarter\nMedium Moon: Waning Gibbous\nLarge Moon: Waning Gibbous", #Day 23
-            "\nSmall Moon: Last Quarter\nMedium Moon: Waning Gibbous\nLarge Moon: Waning Gibbous", #Day 24
-            "\nSmall Moon: Last Quarter\nMedium Moon: Waning Gibbous\nLarge Moon: Waning Gibbous", #Day 25
-            "\nSmall Moon: Last Quarter\nMedium Moon: Waning Gibbous\nLarge Moon: Waning Gibbous", #Day 26
-            "\nSmall Moon: Waning Crecent\nMedium Moon: Waning Gibbous\nLarge Moon: Waning Gibbous", #Day 27
-            "\nSmall Moon: Waning Crecent\nMedium Moon: Waning Gibbous\nLarge Moon: Waning Gibbous", #Day 28
-            "\nSmall Moon: Waning Crecent\nMedium Moon: Last Quarter\nLarge Moon: Waning Gibbous", #Day 29
-            "\nSmall Moon: Waning Crecent\nMedium Moon: Last Quarter\nLarge Moon: Waning Gibbous", #Day 30
+            "", #Day 1
+            "", #Day 2
+            "", #Day 3
+            "", #Day 4
+            "", #Day 5
+            "", #Day 6
+            "", #Day 7
+            "", #Day 8
+            "", #Day 9
+            "", #Day 10
+            "", #Day 11
+            "", #Day 12
+            "", #Day 13
+            "", #Day 14
+            "", #Day 15
+            "", #Day 16
+            "", #Day 17
+            "", #Day 18
+            "", #Day 19
+            "", #Day 20
+            "", #Day 21
+            "", #Day 22
+            "", #Day 23
+            "", #Day 24
+            "", #Day 25
+            "", #Day 26
+            "", #Day 27
+            "", #Day 28
+            "", #Day 29
+            "", #Day 30
         ]
     ]
     output = ", #{events[month][day]}"
@@ -402,4 +402,23 @@ def events(day, month)
         output = ""
     end
     return output
+end
+
+def lunar_phases(day, month, year)
+    phases = ["Full Moon", "Waning Gibbous", "Last Quarter", "Waning Crecent", "New Moon", "Waxing Crecent", "First Quarter", "Waxing Gibbous"]
+    small_moon_cycle = 30
+    medium_moon_cycle = 63
+    large_moon_cycle = 84
+    total_days = day + month*30 + year*360
+    small_moon_mod = total_days%small_moon_cycle
+    medium_moon_mod = total_days%medium_moon_cycle
+    large_moon_mod = total_days%large_moon_cycle
+
+    i = (small_moon_mod/(small_moon_cycle/(phases.length).to_f)).to_i
+    small_moon = phases[i]
+    j = (medium_moon_mod/(medium_moon_cycle/(phases.length).to_f)).to_i
+    medium_moon = phases[j]
+    k = (large_moon_mod/(large_moon_cycle/(phases.length).to_f)).to_i
+    large_moon = phases[k]
+    return "\nSmall Moon: #{small_moon}\nMedium Moon: #{medium_moon}\nLarge Moon: #{large_moon}\n#{i}\n#{j}\n#{k}"
 end
