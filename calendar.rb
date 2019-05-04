@@ -1,4 +1,5 @@
 require_relative "events.rb"
+require 'byebug'
 
 def calendar
     if File.file?("date.txt") == true

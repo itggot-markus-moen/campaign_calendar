@@ -18,12 +18,16 @@ def lunar_phases(day, month, year)
 end
 
 def events(day, month, year)
-    #If the date is already put in add to existing string insead of making a new entry, otherwise it will be overwritten. 
-    #Template key: "#{day-1}, #{month-1}, (years between each happening)", all extra input is integers.
-    events = {"#{1-1}, #{10-1}, 1" => "Is ma birhday", "#{1-1}, #{10-1}, 3" => "Is ma SPECIAL birhday"}
+    events = File.readlines("events.txt")
+    event_hash = {}
+    events.each do |e|
+        arr = e.split(";")
+        event_hash[arr[0]] = arr[1].chomp
+    end
+
     intervals = []
+    max_interval = 100
     i = 1
-    max_interval = 3
     while i <= max_interval
         intervals << i
         i += 1
@@ -32,8 +36,8 @@ def events(day, month, year)
     output = "\nEvents: "
     intervals.each do |e|
         if year%e == 0
-            event = events["#{day}, #{month}, #{e}"]
-            if events != nil
+            event = event_hash["#{day}, #{month}, #{e}"]
+            if event != nil
                 if output == "\nEvents: "
                     output += "#{event}"
                 else
