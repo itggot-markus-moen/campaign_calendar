@@ -21,8 +21,7 @@ def calendar
 
     days = ["1st", "2nd", "3rd", "4th", "5th", "6th", "7th", "8th", "9th", "10th", "11th", "12th", "13th", "14th", "15th", "16th", "17th", "18th", "19th", "20th", "21th", "22th", "23th", "24th", "25th", "26th", "27th", "28th", "29th", "30th"]
     months = ["January", "Febuary", "Mars", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
-    date = [days[day], months[month], year.to_s]
-    output = "#{date[0]} of #{date[1]}, #{date[2]}"
+    output = "#{days[day]} of #{months[month]}, #{year}"
     output += events(day, month, year)
     output += lunar_phases(day, month, year)
     output += "\n#{days_passed} days have passed since the start of the campaign."
@@ -41,8 +40,7 @@ def calendar
             day = 0
         end
         days_passed += 1
-        date = [days[day], months[month], year.to_s]
-        output = "#{date[0]} of #{date[1]}, #{date[2]}"
+        output = "#{days[day]} of #{months[month]}, #{year}"
         output += events(day, month, year)
         output += lunar_phases(day, month, year)
         output += "\n#{days_passed} days have passed since the start of the campaign."
