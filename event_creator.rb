@@ -1,6 +1,4 @@
 def event_creator
-    event_data = File.readlines("events.txt")
-    
     puts "Enter day"
     day = STDIN.gets.chomp.to_i - 1
     puts "Enter month"
@@ -9,30 +7,35 @@ def event_creator
     years = STDIN.gets.chomp.to_i
     puts "Enter event text"
     event = STDIN.gets.chomp
-        if event == "MAXIMUM RESET" || event == "reset"
+        if event == "MAXIMUM RESET"
             File.write("events.txt", "")
-            return "It is done"
+            return "It is done..."
         end
     key = "#{day}, #{month}, #{years}"
 
-    fixed = false
-    event_data.each do |e|
-        arr = e.split(";")
-        if arr[0] == key
-            arr[1] = "#{arr[1]}, #{event}"
-            fixed = true
+    if File.file?("events.txt") == true
+        event_data = File.readlines("events.txt")
+        fixed = false
+        event_data.each do |e|
+            arr = e.split(";")
+            if arr[0] == key
+                arr[1] = "#{arr[1]}, #{event}"
+                fixed = true
+            end
         end
-    end
-    data = ""
-    event_data.each do |e|
-        data += e
-    end
-    if fixed == false
-        if data != ""
-            data += "\n#{key};#{event}"
-        else
-            data += "#{key};#{event}"
+        data = ""
+        event_data.each do |e|
+            data += e
         end
+        if fixed == false
+            if data != ""
+                data += "\n#{key};#{event}"
+            else
+                data += "#{key};#{event}"
+            end
+        end
+    else
+        data = "#{key};#{event}"
     end
     File.write("events.txt", data)
 end

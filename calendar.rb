@@ -29,7 +29,7 @@ def calendar
     puts output
 
     continue = STDIN.gets.chomp
-    while continue != "save" && continue != "Save"
+    while continue != "save" && continue != "Save" && continue != "Maximum RESET"
         if day < days.length - 1
             day += 1
         elsif month < months.length - 1
@@ -48,8 +48,12 @@ def calendar
         puts output
         continue = STDIN.gets.chomp
     end
+    if continue == "MAXIMUM RESET"
+        File.write("date.txt", "")
+        return "It is done..."
+    end
     data = "#{day}\n#{month}\n#{year}\n#{days_passed}"
     File.write("date.txt", data)
 end
 
-p calendar()
+puts calendar()
