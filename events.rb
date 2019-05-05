@@ -18,25 +18,26 @@ def lunar_phases(day, month, year)
 end
 
 def events(day, month, year)
-    events = File.readlines("events.txt")
-    event_hash = {}
-    events.each do |e|
-        arr = e.split(";")
-        event_hash[arr[0]] = arr[1].chomp
-    end
+    if File.file?("events.txt") == true
+        events = File.readlines("events.txt")
+        event_hash = {}
+        events.each do |e|
+            arr = e.split(";")
+            event_hash[arr[0]] = arr[1].chomp
+        end
 
-    intervals = []
-    max_interval = 100
-    i = 1
-    while i <= max_interval
-        intervals << i
-        i += 1
-    end
-    
-    output = "\nEvents: "
-    intervals.each do |e|
-        if year%e == 0
-            event = event_hash["#{day}, #{month}, #{e}"]
+        intervals = []
+        max_interval = 100
+        i = 1
+        while i <= max_interval
+            intervals << i
+            i += 1
+        end
+
+        output = "\nEvents: "
+        intervals.each do |e|
+            offset = year%e
+            event = event_hash["#{day}, #{month}, #{e}, #{offset}"]
             if event != nil
                 if output == "\nEvents: "
                     output += "#{event}"
@@ -45,9 +46,11 @@ def events(day, month, year)
                 end
             end
         end
-    end
 
-    if output == "\nEvents: "
+        if output == "\nEvents: "
+            output = ""
+        end
+    else
         output = ""
     end
     return output
